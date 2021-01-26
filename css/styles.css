@@ -1,0 +1,506 @@
+/* Corpo da página */
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    background-color: #fefefd;
+}
+
+/* Para o Menu ficar à esquerda */
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Para o Menu ficar na horizontal */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+}
+
+/* Menu - para navegar entre as páginas */
+#portfolio {
+    margin-right: 20px;
+    color: black;
+    font-family: "Montserrat Regular";
+}
+
+#sobre {
+    margin-right: 20px;
+    color: black;
+    font-family: "Montserrat Regular";
+}
+
+#contatos {
+    margin-right: 20px;
+    color: black;
+    font-family: "Montserrat Regular";
+}
+
+#sessoes {
+    margin-right: 20px;
+    color: black;
+    font-family: "Montserrat Regular";
+}
+
+#avaliacao {
+    color: black;
+    font-family: "Montserrat Regular";
+}
+
+/* Para os itens do Menu não estarem sublinhados */
+a {
+    text-decoration: none;
+}
+
+/* Para não aparecer um botão no Menu */
+.navbar-expand-lg .navbar-toggler {
+    display: none;
+}
+
+/* Posicionameto do Texto */
+.text-justify {
+    text-align: justify !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/* Espaçamento da Navbar */
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    
+/* Para o logo aparecer na Navbar */
+    #mainNav .navbar-brand img {
+        height: 2rem;
+        transition: height 0.3s ease-in-out;
+    }
+}
+
+/* Posicionamento das páginas ao centro */
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Margem das páginas */
+@media (min-width: 992px) {
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Títulos e subtítulos das páginas */
+.page-section {
+    padding: 6rem 0;
+}
+
+.page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Montserrat";
+}
+
+.page-section h3.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-bottom: 4rem;
+}
+
+/* Formatação das imagens do Portfólio */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Para as álbuns do Portfólio ficarem na horizontal */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+
+/* Para os álbuns do Portfólio ficarem divididos em duas linhas */
+.col-lg-4 {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+
+/* Separação entre os álbuns do Portfólio */
+.col-sm-auto,
+.col-sm-6,
+.col-sm-5,
+.col-sm-4,
+.col-sm-3,
+.col-sm-2,
+.col-sm-1,
+.col,
+.col-auto,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+    position: relative;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+/* Design do Portfólio */
+#portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Para meter os álbuns do Portfólio com opacidade ao passar o cursor por cima */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    font-size: 1.25rem;
+    color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+    opacity: 1;
+}
+
+/* Para centrar o texto do Portfólio */
+#portfolio .portfolio-item .portfolio-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Para formatar o texto do Portfólio */
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Vídeo Portfólio */
+.video {
+    margin-left: 300px;
+}
+
+/* Design da Tabela Sessões */
+table {
+    font-family: Montserrat;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-top: 0px;
+    float: center;
+}
+
+td,
+th {
+    border: 1px solid #dee2e6;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Lista de Sugestões de Locais*/
+ul {
+    list-style-type: none;
+}
+
+/* Texto Sobre */
+.team-member {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.team-member h4 {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+.texto-sobre {
+    text-align: justify;
+    margin-top: 103px;
+    margin-right: 125px;
+}
+
+/* Imagem Sobre */
+.team-member img {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 10px;
+}
+
+/* Mapa */
+.map iframe {
+    margin-top: 10px;
+    height: 25%;
+    width: 78%;
+    border-radius: 10px;
+}
+
+/* Dados */
+.dados-container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Para dividir o ecrã na página Contatos */
+.dados-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 30px;
+    grid-template-areas: "form contatos";
+}
+
+/* Contatos */
+.input-contatos input {
+    width: 90%;
+}
+
+.contatos {
+    grid-area: contatos;
+    width: 100%;
+}
+
+.contatos2 {
+    font-size: 20px;
+}
+
+.sobre-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 30px;
+}
+
+.sobre-esquerdo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-direito {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Formulários */
+.form {
+    grid-area: form;
+    width: 100%;
+}
+
+.form2 {
+    grid-area: form;
+    width: 100%;
+}
+
+/* Inputs dos Formulários para inserir os dados */
+input {
+    width: 42%;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: Montserrat;
+    font-size: 100%;
+}
+
+.genero {
+    width: 150px;
+}
+
+/* Design do Botão Questão da página Contatos */
+.btn1 {
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    height: 90px;
+    font-family: Montserrat;
+    font-size: 90%;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-1 {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 90px;
+    margin-top: 830px;
+    margin-bottom: 30px;
+}
+
+#btn-1 {
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    height: 90px;
+    font-family: Montserrat;
+    font-size: 90%;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+#btn-1 a {
+    color: #fff;
+}
+
+/* Design do campo Grau de Satisfação do Formulário Avaliação */
+select {
+    width: 42%;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: Montserrat;
+    font-size: 100%;
+}
+
+/* Botões de Submissão dos Formulários */
+.myButton {
+    margin-top: 20px;
+    width: auto;
+    background-color: black;
+    font-family: Montserrat;
+    font-size: 90%;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    font-size: 0.9rem;
+    font-family: "Montserrat";
+    background-color: #000;
+    height: 70px;
+}
+
+.footer {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    color: #fff;
+}
+
+.copyright {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+/* Redes Sociais */
+.redes-sociais {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.svg-inline--fa.fa-w-14 {
+    height: 70%;
+}
+
+.svg-inline--fa.fa-w-10 {
+    height: 70%;
+}
+
+.btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.btn-dark {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.btn-dark:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-color: #000000;
+}
