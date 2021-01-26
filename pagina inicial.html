@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>4KSTUDIO</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/scripts.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/Logo4KS.svg" alt="" /></a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li><a href="file:///C:/Users/icsan/OneDrive/Ambiente%20de%20Trabalho/Website%204KSTUDIO/portfolio.html#portfolioModal3" id="portfolio">PORTFÓLIO</a></li>
+                    <li><a href="file:///C:/Users/icsan/OneDrive/Ambiente%20de%20Trabalho/Website%204KSTUDIO/sessoes.html" id="sessoes">SESSÕES</a></li>
+                    <li><a href="file:///C:/Users/icsan/OneDrive/Ambiente%20de%20Trabalho/Website%204KSTUDIO/sobre.html" id="sobre">SOBRE</a></li>
+                    <li><a href="file:///C:/Users/icsan/OneDrive/Ambiente%20de%20Trabalho/Website%204KSTUDIO/contatos.html#!" id="contatos">CONTATOS</a></li>
+                    <li><a href="file:///C:/Users/icsan/OneDrive/Ambiente%20de%20Trabalho/Website%204KSTUDIO/avaliacao.html" id="avaliacao">AVALIAÇÃO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Slideshow-->
+    <img class="mySlides" src="assets/img/slide2.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/slide3.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/slide4.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/slide5.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/slide7.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/slide8.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/slide9.jpg" style="width:100%">
+    <img class="mySlides" src="assets/img/slide10.jpg" style="width:100%">
+
+    <!--Javascript do Slideshow-->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+
+    </script>
+
+    <!-- Footer-->
+    <footer>
+        <div class="footer">
+            <div class="copyright">Copyright © 4KSTUDIO 2021</div>
+            <div class="redes-sociais">
+                <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/verdementa_fotografia?igshid=thhhnk40yjvi"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/VerdeMentaFotografia"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
